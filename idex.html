@@ -1,32 +1,41 @@
 <!DOCTYPE html>
-<html >
+<html>
 <head>
-    <title>Mi Pagina</title>
+    <title>Mi Pagina</title> <!-- Título de la página que se muestra en la pestaña del navegador -->
 </head>
 <body>
-    <form action="/formulario" method="post">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" placeholder="Nombre"/>
+    <!-- Primer formulario que envía datos al servidor mediante el método POST -->
+    <form action="/formulario" method="post"> 
+        <label for="nombre">Nombre:</label> <!-- Etiqueta para el campo de texto del nombre -->
+        <input type="text" id="nombre" name="nombre" placeholder="Nombre"/> <!-- Campo de texto para ingresar el nombre -->
     </form>
     <br>
-    <form>
-        <label for="apellido">Apellido:</label>
-        <input type="text" id="apellido" name="apellido" placeholder="Apellido"/>
+    <!-- Segundo formulario (sin acción definida) -->
+    <form> 
+        <label for="apellido">Apellido:</label> <!-- Etiqueta para el campo de texto del apellido -->
+        <input type="text" id="apellido" name="apellido" placeholder="Apellido"/> <!-- Campo de texto para ingresar el apellido -->
     </form>
     <br>
-    <label for="comentario">Comentario:</label>
+    <label for="comentario">Comentario:</label> <!-- Etiqueta para el área de texto -->
     <br>
+    <!-- Área de texto para ingresar comentarios -->
     <textarea cols="50" rows="10" id="comentario" placeholder="Ingrese Un Comentario" name="comentario"></textarea>
     <br>
+    <!-- Botones: el primero es solo un botón (sin acción de envío) y el segundo restablece los campos del formulario -->
     <button type="button">Enviar</button>
     <button type="reset">Borrar</button>
-    <h1>Hola Mundo</h1>
-    <hr>
-    <h2>Mi Primera Pagina</h2>
-    <p>Hola este es mi primer <span style="color: crimson;">web hecho con html.</span>
-    </p>
-    <a href="https://www.youtube.com/watch?v=mCdA4bJAGGk">Ir YouTube</a>
-    <hr>
-    <img src="images2.jpg" height="400" width="400">
+    
+    <!-- Encabezados y texto -->
+    <h1>Hola Mundo</h1> <!-- Encabezado de nivel 1 -->
+    <hr> <!-- Línea horizontal -->
+    <h2>Mi Primera Pagina</h2> <!-- Encabezado de nivel 2 -->
+    <p>Hola este es mi primer <span style="color: crimson;">web hecho con html.</span></p> <!-- Párrafo con texto estilizado en color crimson -->
+    
+    <!-- Enlace a un video de YouTube -->
+    <a href="https://www.youtube.com/watch?v=mCdA4bJAGGk">Ir YouTube</a> 
+    <hr> <!-- Línea horizontal -->
+    
+    <!-- Imagen con dimensiones definidas -->
+    <img src="images2.jpg" height="400" width="400"> 
 </body>
 </html>
